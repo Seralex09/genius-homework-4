@@ -1,0 +1,10 @@
+.link-header {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  transition: color 0.2s, transform 0.2s;
+
+  &:hover {
+    color: var(--color-primary-light);
+    transform: scale(1.02);
+  }
+}

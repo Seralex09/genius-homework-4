@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Zone</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -159,7 +159,7 @@
                             <p>Очищення обличчя</p>
                         </li>
                     </ul>
-                    <button class="carousel-button next" type="button">
+                    <button class="carousel-button carousel-button--next" type="button">
                         <svg width="16" height="16">
                             <use href="./images/icons.svg#icon-arrow"></use>
                         </svg>
@@ -247,28 +247,28 @@
         </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal-btn-close" type="button">Close</button>
             <h2>Замовити дзвінок</h2>
             <p class="modal-text">Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</p>
             <form name="modal-form" autocomplete="on">
-                <div class="form-field">
-                    <label class="form-label vissully-hidden" for="user-name">Ваше ім'я та прізвище</label>
-                    <input class="form-input" type="text" id="user-name" name="user-name"
+                <div class="modal__form-field input">
+                    <label class="input__label vissully-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                    <input class="input__control" type="text" id="user-name" name="user-name"
                         placeholder="Ваше ім'я та прізвище" required pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$" />
                 </div>
-                <div class="form-field">
-                    <label class="form-label vissully-hidden" for="user-tel">Ваш номер телефону</label>
-                    <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону"
-                        required pattern="^\+380[0-9]{9}" />
+                <div class="modal__form-field input">
+                    <label class="input__label vissully-hidden" for="user-tel">Ваш номер телефону</label>
+                    <input class="input__control" type="tel" id="user-tel" name="user-tel"
+                        placeholder="Ваш номер телефону" required pattern="^\+380[0-9]{9}" />
                 </div>
-                <div class="form-field">
-                    <label class="form-label vissully-hidden" for="user-tel">Ваша електронна пошта</label>
-                    <input class="form-input" type="email" id="user-email" name="user-email"
+                <div class="modal__form-field input">
+                    <label class="input__label vissully-hidden" for="user-tel">Ваша електронна пошта</label>
+                    <input class="input__control" type="email" id="user-email" name="user-email"
                         placeholder="Ваша електронна пошта" required />
                 </div>
-                <button class="button form-button" type="submit">Записатись безкоштовно</button>
+                <button class="button modal__button" type="submit">Записатись безкоштовно</button>
                 <p class="form-terms">
                     Натискаючи на кнопку я погоджуюсь
                     <a class="form-terms-link" href="#">з політикою конфіденційності</a>

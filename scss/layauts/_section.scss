@@ -1,0 +1,22 @@
+.section {
+  padding: 48px 0;
+}
+
+.section-title {
+  font-family: 'Play', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.section-title .accent {
+  color: var(--color-primary-light);
+}
+
+.section-title .capitalize {
+  text-transform: capitalize;
+}
+
+.section-title-center {
+  margin-bottom: 48px;
+  text-align: center;
+}
