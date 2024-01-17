@@ -14,33 +14,33 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-}
 
-.hero-container {
-  width: 100%;
-  max-width: 529px;
-  margin-bottom: 40px;
-}
+  &__container {
+    width: 100%;
+    max-width: 529px;
+    margin-bottom: 40px;
+  }
 
-.hero-title {
-  font-family: 'Play', sans-serif;
-  text-transform: capitalize;
-  color: var(--color-primary-light);
-  margin-bottom: 40px;
-  font-size: 140px;
-  font-weight: 700;
-  line-height: 0.8;
-}
+  &__title {
+    font-family: 'Play', sans-serif;
+    text-transform: capitalize;
+    color: var(--color-primary-light);
+    margin-bottom: 40px;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.8;
+  }
 
-.hero-button-container {
-  width: 100%;
-  max-width: 238px;
-}
+  &__button-container {
+    width: 100%;
+    max-width: 238px;
+  }
 
-.button-signature {
-  margin-top: 14px;
-  color: #4a4a4a;
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: center;
+  &__button-signature {
+    margin-top: 14px;
+    color: #4a4a4a;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+  }
 }

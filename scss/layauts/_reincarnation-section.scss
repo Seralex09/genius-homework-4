@@ -1,39 +1,34 @@
-.information-section {
+.reincarnation-section {
   padding-bottom: 128px;
-}
 
-.information-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 32px;
-}
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+  }
 
-.information-text-section {
-  margin-top: 40px;
-  width: 100%;
-  max-width: 709px;
-}
+  &__text-bloc {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 709px;
+  }
 
-.information-title {
-  margin-bottom: 40px;
-}
+  &__text-bloc-title {
+    margin-bottom: 40px;
+  }
 
-.information-text {
-  font-size: 22px;
-  line-height: 1.72;
-}
+  &__text-bloc-text {
+    font-size: 22px;
+    line-height: 1.72;
+  }
 
-.information-text p {
-  margin-bottom: 40px;
-}
+  &__text-bloc-paragraph {
+    margin-bottom: 40px;
 
-.information-text p:last-child {
-  margin-bottom: 0;
-}
-
-.information-text .accent {
-  text-transform: capitalize;
-  font-weight: 500;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .information-images-section {
