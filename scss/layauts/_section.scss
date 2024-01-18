@@ -5,10 +5,10 @@
     font-family: 'Play', sans-serif;
     font-size: 64px;
     font-weight: 700;
-  }
-}
 
-.section-title-center {
-  margin-bottom: 48px;
-  text-align: center;
+    &--centered {
+      margin-bottom: 48px;
+      text-align: center;
+    }
+  }
 }
