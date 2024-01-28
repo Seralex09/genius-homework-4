@@ -5,10 +5,18 @@
   width: 100%;
 
   &__container {
+    display: flex;
     background: rgba(255, 255, 255, 0.25); /* треба уточнити */
     width: 100%;
     max-width: 1440px;
     padding: 0 100px;
+    align-items: center;
+    gap: 40px;
+
+    @media screen and (max-width: $bp-desktop) {
+      padding: 0 16px 0 20px;
+      background: none;
+    }
   }
 
   &__nav {
@@ -16,13 +24,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-grow: 1;
     gap: 56px;
+
+    @media screen and (max-width: $bp-desktop) {
+      padding: 16px 0;
+    }
+  }
+
+  &__logo {
+    @media screen and (max-width: $bp-desktop) {
+      width: 58px;
+      height: 33px;
+    }
   }
 
   &__links-bloc {
     display: flex;
     align-items: center;
     gap: 56px;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__social-networks-bloc {
@@ -30,5 +54,23 @@
     align-items: center;
     gap: 32px;
     fill: var(--color-primary-dark);
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: block;
+      width: 20px;
+      height: 14px;
+      padding: 0;
+      fill: var(--color-primary-white);
+      background-color: transparent;
+      border: none;
+    }
   }
 }

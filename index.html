@@ -13,7 +13,11 @@
       <div class="container header__container">
         <nav class="header__nav">
           <a href="#">
-            <img src="./images/logo.svg" alt="Логотип кометологічної клініки" />
+            <img
+              class="header__logo"
+              src="./images/logo.svg"
+              alt="Логотип кометологічної клініки"
+            />
           </a>
           <ul class="header__links-bloc">
             <li>
@@ -55,6 +59,18 @@
             </li>
           </ul>
         </nav>
+
+        <button class="header__burger menu-btn-open" type="button">
+          <svg width="20" height="14">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">
+            Close
+          </button>
+        </div>
       </div>
     </header>
 
@@ -78,7 +94,7 @@
       </section>
 
       <!-- Перевтілюйтесь -->
-      <section class="reincarnation-section" id="reincarnation-section">
+      <!-- <section class="reincarnation-section" id="reincarnation-section">
         <div class="container">
           <div class="reincarnation-section__container">
             <div class="reincarnation-section__texts-bloc">
@@ -127,10 +143,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Чому обирають нас -->
-      <section class="section" id="advantages-section">
+      <!-- <section class="section" id="advantages-section">
         <div class="container">
           <h2 class="section__title section__title--centered">
             Чому люди <br />
@@ -166,10 +182,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наші процедури -->
-      <section class="section" id="procedures-section">
+      <!-- <section class="section" id="procedures-section">
         <div class="container">
           <h2 class="section__title section__title--centered">
             Наші <span class="text-primary-light">процедури</span>
@@ -213,10 +229,10 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Як нас знайти -->
-      <section class="contacts-section section" id="contacts-section">
+      <!-- <section class="contacts-section section" id="contacts-section">
         <div class="container">
           <h2 class="section__title section__title--centered">
             Як нас <span class="text-primary-light">знайти</span>
@@ -293,9 +309,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <nav class="footer__nav">
@@ -382,9 +398,9 @@
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden">
+    <!-- <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
           Close
@@ -447,8 +463,9 @@
           </p>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
