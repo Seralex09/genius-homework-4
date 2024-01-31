@@ -79,7 +79,7 @@
       <section class="hero-section">
         <div class="container">
           <div class="hero-section__container">
-            <p>Косметологічна клініка</p>
+            <p class="hero-section__text">Косметологічна клініка</p>
             <h1 class="hero-section__title">beauty zone</h1>
             <div class="hero-section__button-container">
               <button class="button modal-btn-open" type="button">
@@ -94,7 +94,7 @@
       </section>
 
       <!-- Перевтілюйтесь -->
-      <!-- <section class="reincarnation-section" id="reincarnation-section">
+      <section class="reincarnation-section" id="reincarnation-section">
         <div class="container">
           <div class="reincarnation-section__container">
             <div class="reincarnation-section__texts-bloc">
@@ -123,11 +123,19 @@
             <div class="reincarnation-section__images-bloc">
               <img
                 class="reincarnation-section__image"
+                srcset="
+                  ./images/first-procedure.jpg    1x,
+                  ./images/first-procedure@2x.jpg 2x
+                "
                 src="./images/first-procedure.jpg"
                 alt="Перша процедура"
               />
               <img
                 class="reincarnation-section__image reincarnation-section__image-bottom"
+                srcset="
+                  ./images/second-procedure.jpg    1x,
+                  ./images/second-procedure@2x.jpg 2x
+                "
                 src="./images/second-procedure.jpg"
                 alt="Друга процедура"
               />
@@ -141,12 +149,15 @@
                 <use href="./images/icons.svg#icon-star"></use>
               </svg>
             </div>
+            <svg class="star-4" width="40" height="40">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Чому обирають нас -->
-      <!-- <section class="section" id="advantages-section">
+      <section class="section" id="advantages-section">
         <div class="container">
           <h2 class="section__title section__title--centered">
             Чому люди <br />
@@ -157,7 +168,7 @@
               <svg width="48" height="48">
                 <use href="./images/icons.svg#icon-materials-science"></use>
               </svg>
-              <p>
+              <p class="advantages-section__list-text">
                 Всі наші косметологи мають вищу медичну освіту та стаж роботи
                 від 5 років
               </p>
@@ -166,7 +177,7 @@
               <svg width="48" height="48">
                 <use href="./images/icons.svg#icon-medicine_cosmetics"></use>
               </svg>
-              <p>
+              <p class="advantages-section__list-text">
                 Використовуємо тільки професійне обладнання та косметику,
                 перевірену часом
               </p>
@@ -175,14 +186,14 @@
               <svg width="48" height="48">
                 <use href="./images/icons.svg#icon-crown"></use>
               </svg>
-              <p>
+              <p class="advantages-section__list-text">
                 Наша мета - підкреслити переваги та приховати недоліки, а не
                 переробити
               </p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наші процедури -->
       <!-- <section class="section" id="procedures-section">

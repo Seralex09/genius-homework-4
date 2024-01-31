@@ -79,3 +79,33 @@
     fill: #747272;
   }
 }
+
+.star-4 {
+  position: absolute;
+  bottom: -40px;
+  right: 22px;
+  fill: #011f4a;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.star-1:hover {
+  animation-name: star-decrease;
+  animation-duration: 3s;
+}
+
+@keyframes star-decrease {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+
+  50% {
+    transform: scale(0.7) rotate(45deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}

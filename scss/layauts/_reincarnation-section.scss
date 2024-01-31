@@ -1,7 +1,12 @@
 .reincarnation-section {
   padding-bottom: 128px;
 
+  @media screen and (max-width: $bp-desktop) {
+    padding-bottom: 80px;
+  }
+
   &__container {
+    position: relative;
     display: flex;
     align-items: flex-start;
     gap: 32px;
@@ -15,15 +20,28 @@
 
   &__text-title {
     margin-bottom: 40px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 24px;
+    }
   }
 
   &__text {
     font-size: 22px;
     line-height: 1.72;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 18px;
+      line-height: 1.17;
+    }
   }
 
   &__paragraph {
     margin-bottom: 40px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 16px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -35,6 +53,10 @@
     width: 100%;
     max-width: 531px;
     height: 695px;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__image {
