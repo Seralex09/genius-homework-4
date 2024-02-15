@@ -8,4 +8,14 @@
   &__container {
     overflow: hidden;
   }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
 }
