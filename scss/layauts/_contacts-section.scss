@@ -7,20 +7,41 @@
     margin: 0 auto;
     display: flex;
     gap: 32px;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column-reverse;
+      gap: 24px;
+    }
   }
 
   &__map {
     flex-shrink: 0;
+    width: 605px;
+    height: 481px;
     border-radius: 32px;
     border: none;
+
+    @media screen and (max-width: $bp-desktop) {
+      width: 320px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      margin: 0 -24px;
+      width: auto;
+      height: 232px;
+      border-radius: 0;
+    }
   }
 
   &__form-bloc {
     width: 100%;
-    max-width: 423px;
     padding: 48px 56px;
     border-radius: 32px;
     background-color: var(--color-primary-dark);
+
+    @media screen and (max-width: $bp-desktop) {
+      padding: 42px 24px;
+    }
   }
 
   &__header {

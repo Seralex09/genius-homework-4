@@ -28,5 +28,11 @@
     &:hover {
       transform: scale(1.05);
     }
+
+    &--mobile {
+      @media screen and (max-width: $bp-tablet) {
+        display: none;
+      }
+    }
   }
 }
