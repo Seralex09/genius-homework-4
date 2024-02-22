@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body class="body__background">
   <header class="header">
     <div class="container header__container">
       <nav class="header__nav">
@@ -365,70 +365,45 @@
     </div>
   </footer>
 
-  <!-- <div class="backdrop is-hidden">
-      <div class="modal">
-        <button class="modal__btn-close modal-btn-close" type="button">
-          Close
+  <div class="backdrop">
+    <div class="modal">
+      <button class="modal__btn-close modal-btn-close" type="button">
+        <!-- <svg width="16" height="16">
+          <use href="./images/icons.svg#icon-Group"></use>
+        </svg> -->
+        Close
+      </button>
+      <h2 class="modal__title">Замовити дзвінок</h2>
+      <p class="modal__text">
+        Запишіться <span class="text-primary-light">безкоштовно</span> та
+        отримайте подарунок
+      </p>
+      <form name="modal-form" autocomplete="on">
+        <div class="modal__form-field input">
+          <label class="input__label vissully-hidden" for="user-name">Ваше ім'я та прізвище</label>
+          <input class="input__control" type="text" id="user-name" name="user-name" placeholder="Ваше ім'я та прізвище"
+            required pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$" />
+        </div>
+        <div class="modal__form-field input">
+          <label class="input__label vissully-hidden" for="user-tel">Ваш номер телефону</label>
+          <input class="input__control" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону"
+            required pattern="^\+380[0-9]{9}" />
+        </div>
+        <div class="modal__form-field input">
+          <label class="input__label vissully-hidden" for="user-tel">Ваша електронна пошта</label>
+          <input class="input__control" type="email" id="user-email" name="user-email"
+            placeholder="Ваша електронна пошта" required />
+        </div>
+        <button class="button modal__button" type="submit">
+          Записатись безкоштовно
         </button>
-        <h2 class="modal__title">Замовити дзвінок</h2>
-        <p class="modal__text">
-          Запишіться <span class="text-primary-light">безкоштовно</span> та
-          отримайте подарунок
+        <p class="form-terms">
+          Натискаючи на кнопку я погоджуюсь
+          <a class="form-terms__link" href="#">з політикою конфіденційності</a>
         </p>
-        <form name="modal-form" autocomplete="on">
-          <div class="modal__form-field input">
-            <label class="input__label vissully-hidden" for="user-name"
-              >Ваше ім'я та прізвище</label
-            >
-            <input
-              class="input__control"
-              type="text"
-              id="user-name"
-              name="user-name"
-              placeholder="Ваше ім'я та прізвище"
-              required
-              pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
-            />
-          </div>
-          <div class="modal__form-field input">
-            <label class="input__label vissully-hidden" for="user-tel"
-              >Ваш номер телефону</label
-            >
-            <input
-              class="input__control"
-              type="tel"
-              id="user-tel"
-              name="user-tel"
-              placeholder="Ваш номер телефону"
-              required
-              pattern="^\+380[0-9]{9}"
-            />
-          </div>
-          <div class="modal__form-field input">
-            <label class="input__label vissully-hidden" for="user-tel"
-              >Ваша електронна пошта</label
-            >
-            <input
-              class="input__control"
-              type="email"
-              id="user-email"
-              name="user-email"
-              placeholder="Ваша електронна пошта"
-              required
-            />
-          </div>
-          <button class="button modal__button" type="submit">
-            Записатись безкоштовно
-          </button>
-          <p class="form-terms">
-            Натискаючи на кнопку я погоджуюсь
-            <a class="form-terms__link" href="#"
-              >з політикою конфіденційності</a
-            >
-          </p>
-        </form>
-      </div>
-    </div> -->
+      </form>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/procedures-slider.js"></script>
