@@ -15,6 +15,10 @@
 
   overflow: hidden;
 
+  @media screen and (max-width: $bp-tablet) {
+    height: 416px;
+  }
+
   &__image {
     position: absolute;
     z-index: -1;

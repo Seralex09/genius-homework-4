@@ -4,6 +4,10 @@
   justify-content: center;
   gap: 24px;
 
+  @media screen and (max-width: $bp-tablet) {
+    display: none;
+  }
+
   &__button {
     width: 12px;
     height: 12px;
